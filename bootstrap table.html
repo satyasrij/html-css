@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .heading{
+            margin-top: 10px;;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+    <h2>Bootstrap Table with Modal</h2>
+  </div>
+    <div class="container mt-3">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jayanth</td>
+            <td>
+                
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add
+  </button>
+  
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Add data 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+    Delete
+  </button>
+  
+
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Delete data 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+            </td>
+            
+             
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Trilok</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Satya</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Vijay</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Phani</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Teja</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Satyasri</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Vijju</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Padma</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Srinu</td>
+            <div class="flex">
+              <td>
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

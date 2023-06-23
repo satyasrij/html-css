@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="5;http://127.0.0.1:5500/cards.html"> -->
+
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 14px;
+      }
+    </style>
+    <style>
+      form {
+        width: 50%;
+        margin: 50px auto;
+        border: 1px solid #e5e5e5;
+        padding: 30px;
+        border-radius: 5px;
+      }
+
+      .form-group {
+        position: relative;
+        margin-bottom: 7px;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 7px 18px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      .form-control:focus {
+        outline: 2px solid blue;
+      }
+
+      label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .heading {
+        text-align: center;
+        font-weight: 600;
+        color: blue;
+        font-size: 20px;
+      }
+
+      .register-button {
+        color: white;
+        background-color: blue;
+        border: 1px solid blue;
+        padding: 7px 15px;
+        border-radius: 5px;
+        width: 30%;
+      }
+
+      .button-section {
+        text-align: center;
+      }
+
+      .fa-user {
+        position: relative;
+        top: 25px;
+        left: -50px;
+      }
+      .fa-key {
+        position: relative;
+        top: 25px;
+        left: -50px;
+      }
+      .fa-eye {
+        position: absolute;
+        top: 23px;
+        right: 14px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <form>
+      <div class="heading">Register Form</div>
+
+      <div class="form-group">
+        <label for="username">username</label>
+        <i class="fa fa-user"></i>
+        <input
+          class="form-control"
+          id="username"
+          type="text"
+          placeholder="Enter username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <i class="fa fa-key"></i><i class="fa fa-eye"></i
+        ><input
+          class="form-control"
+          id="password"
+          type="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="state">Select state</label>
+        <select class="form-control" name="" id="state">
+          <option disabled selected>select state</option>
+          <option>Andhra</option>
+          <option>Gujarat</option>
+          <option>Telenga</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Select Gender </label>
+
+        <div>
+          <input type="radio" name="gender" /> <span>Male</span>
+          <input type="radio" name="gender" /><span>Female</span>
+        </div>
+      </div>
+      <div class="form-group button-section">
+        <a class="register-button" href="cards.html">Register</a>
+        <!-- <input class="register-button" type="submit" value="Register" /> -->
+      </div>
+    </form>
+    <div></div>
+  </body>
+</html>
